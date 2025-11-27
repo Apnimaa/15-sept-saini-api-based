@@ -293,13 +293,13 @@ async def drm_handler(bot: Client, m: Message):
          
             elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id={user_id}"
-                mpd, keys = helper.get_mps_and_keys(url)
+                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id={6201066540}"
+                mpd, keys = helper.get_mps_and_keys2(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             #elif "classplusapp" in url:
-                #signed_api = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id={user_id}"
+                #signed_api = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id={6201066540}"
                 #response = requests.get(signed_api, timeout=20)
                 #url = response.text.strip()
                 #url = response.json()['url']  
